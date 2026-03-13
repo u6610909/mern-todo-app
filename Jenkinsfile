@@ -1,6 +1,10 @@
 pipeline {
     agent any
     
+    tools {
+        nodejs 'node'
+    }
+    
     environment {
         // REPLACE WITH YOUR ACTUAL DOCKER HUB USERNAME
         DOCKER_IMAGE = 'pratchanon/finead-todo-app:latest'
